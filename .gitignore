@@ -1,0 +1,25 @@
+# Secrets and local configuration
+.env
+.env.*
+*.pem
+*.key
+
+# Dependencies and generated files
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+*.swp
+*.swo
+*.tmp
+*.temp
+*.log
