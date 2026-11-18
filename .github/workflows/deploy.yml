@@ -34,6 +34,9 @@ jobs:
           test -f index.html || { echo 'Missing index.html at repository root.' >&2; exit 1; }
           mkdir -p dist
           cp index.html dist/index.html
+          test -s demo-images.js || { echo 'Missing demo-images.js.' >&2; exit 1; }
+          cp demo-images.js dist/demo-images.js
+          test -s img/model.jpg || { echo 'Missing default model image.' >&2; exit 1; }
           if [[ -d img ]]; then
             cp -R img dist/img
           fi
